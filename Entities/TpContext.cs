@@ -24,6 +24,13 @@ public partial class TpContext : DbContext
 
     public virtual DbSet<Tripdetail> Tripdetails { get; set; }
 
+    public virtual DbSet<expensesdto> expensesdto { get; set; }
+
+    public virtual DbSet<memberdetailsdto> memberdetailsdto { get; set; }
+
+    public virtual DbSet<placesdetailsdto> placesdetailsdto { get; set; }
+
+    public virtual DbSet<tripdetailsdto> tripdetailsdto { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

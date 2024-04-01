@@ -1,7 +1,10 @@
-﻿namespace TravelPlanner
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TravelPlanner
 {
     public class expensesdto
     {
+        [Key]
         public int? Userid { get; set; }
 
         public int? Placeid { get; set; }
